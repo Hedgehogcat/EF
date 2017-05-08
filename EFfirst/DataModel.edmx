@@ -1,0 +1,544 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="2.0" xmlns:edmx="http://schemas.microsoft.com/ado/2008/10/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="JoinSoft_JYBZModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2008" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+        <EntityType Name="GY_EMP">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="char" MaxLength="32" Nullable="false" />
+          <Property Name="CLASSIFICATION" Type="nvarchar" MaxLength="512" />
+          <Property Name="KEYED_NAME" Type="nvarchar" MaxLength="128" />
+          <Property Name="CREATED_ON" Type="datetime" Nullable="false" />
+          <Property Name="CREATED_BY_ID" Type="char" MaxLength="32" Nullable="false" />
+          <Property Name="OWNED_BY_ID" Type="char" MaxLength="32" />
+          <Property Name="MANAGED_BY_ID" Type="char" MaxLength="32" />
+          <Property Name="MODIFIED_ON" Type="datetime" />
+          <Property Name="MODIFIED_BY_ID" Type="char" MaxLength="32" />
+          <Property Name="CURRENT_STATE" Type="char" MaxLength="32" />
+          <Property Name="STATE" Type="nvarchar" MaxLength="32" />
+          <Property Name="LOCKED_BY_ID" Type="char" MaxLength="32" />
+          <Property Name="IS_CURRENT" Type="char" MaxLength="1" />
+          <Property Name="MAJOR_REV" Type="nvarchar" MaxLength="8" />
+          <Property Name="MINOR_REV" Type="nvarchar" MaxLength="8" />
+          <Property Name="IS_RELEASED" Type="char" MaxLength="1" />
+          <Property Name="NOT_LOCKABLE" Type="char" MaxLength="1" />
+          <Property Name="CSS" Type="nvarchar(max)" />
+          <Property Name="GENERATION" Type="int" />
+          <Property Name="NEW_VERSION" Type="char" MaxLength="1" />
+          <Property Name="CONFIG_ID" Type="char" MaxLength="32" Nullable="false" />
+          <Property Name="PERMISSION_ID" Type="char" MaxLength="32" Nullable="false" />
+          <Property Name="TEAM_ID" Type="char" MaxLength="32" />
+          <Property Name="FNUMBER" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="FSHORTNUMBER" Type="nvarchar" MaxLength="10" />
+          <Property Name="FNAME" Type="nvarchar" MaxLength="80" Nullable="false" />
+          <Property Name="FDETAILID" Type="char" MaxLength="1" />
+          <Property Name="FGENDER" Type="nvarchar" MaxLength="64" />
+          <Property Name="FDEPTID" Type="char" MaxLength="32" />
+          <Property Name="FADDRESS" Type="nvarchar" MaxLength="255" />
+          <Property Name="FHIREDATE" Type="datetime" />
+          <Property Name="FLEAVEDATE" Type="datetime" />
+          <Property Name="FBANKACCOUNT" Type="nvarchar" MaxLength="80" />
+          <Property Name="FPHONE" Type="nvarchar" MaxLength="30" />
+          <Property Name="FIDCARDID" Type="nvarchar" MaxLength="30" />
+          <Property Name="FBIRTHDAY" Type="datetime" />
+          <Property Name="FBIRTHPLACE" Type="nvarchar" MaxLength="100" />
+          <Property Name="FDEGREE" Type="nvarchar" MaxLength="64" />
+          <Property Name="FDUTY" Type="nvarchar" MaxLength="64" />
+          <Property Name="FDELETED" Type="char" MaxLength="1" />
+          <Property Name="ISIMPORTFLAG" Type="char" MaxLength="1" />
+          <Property Name="FNOTE" Type="nvarchar(max)" />
+          <Property Name="FOUTERID" Type="nvarchar" MaxLength="100" />
+          <Property Name="FOUTERNUMBER" Type="nvarchar" MaxLength="50" />
+          <Property Name="FOUTERNAME" Type="nvarchar" MaxLength="80" />
+          <Property Name="FWCID" Type="char" MaxLength="32" />
+          <Property Name="FPARENTID" Type="char" MaxLength="32" />
+          <Property Name="FPROFESSIONAL" Type="char" MaxLength="32" />
+          <Property Name="FMANAGER" Type="char" MaxLength="32" />
+          <Property Name="FORDER" Type="int" />
+          <Property Name="FHOMEPHONE" Type="nvarchar" MaxLength="32" />
+          <Property Name="FFAX" Type="nvarchar" MaxLength="32" />
+          <Property Name="FOFFICEPHONE" Type="nvarchar" MaxLength="32" />
+          <Property Name="FEMAIL" Type="nvarchar" MaxLength="32" />
+          <Property Name="FERPID" Type="nvarchar" MaxLength="32" />
+          <Property Name="FEASID" Type="char" MaxLength="32" />
+        </EntityType>
+        <EntityType Name="GY_ITEM">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="char" MaxLength="32" Nullable="false" />
+          <Property Name="CLASSIFICATION" Type="nvarchar" MaxLength="512" />
+          <Property Name="KEYED_NAME" Type="nvarchar" MaxLength="128" />
+          <Property Name="CREATED_ON" Type="datetime" Nullable="false" />
+          <Property Name="CREATED_BY_ID" Type="char" MaxLength="32" Nullable="false" />
+          <Property Name="OWNED_BY_ID" Type="char" MaxLength="32" />
+          <Property Name="MANAGED_BY_ID" Type="char" MaxLength="32" />
+          <Property Name="MODIFIED_ON" Type="datetime" />
+          <Property Name="MODIFIED_BY_ID" Type="char" MaxLength="32" />
+          <Property Name="CURRENT_STATE" Type="char" MaxLength="32" />
+          <Property Name="STATE" Type="nvarchar" MaxLength="32" />
+          <Property Name="LOCKED_BY_ID" Type="char" MaxLength="32" />
+          <Property Name="IS_CURRENT" Type="char" MaxLength="1" />
+          <Property Name="MAJOR_REV" Type="nvarchar" MaxLength="8" />
+          <Property Name="MINOR_REV" Type="nvarchar" MaxLength="8" />
+          <Property Name="IS_RELEASED" Type="char" MaxLength="1" />
+          <Property Name="NOT_LOCKABLE" Type="char" MaxLength="1" />
+          <Property Name="CSS" Type="nvarchar(max)" />
+          <Property Name="GENERATION" Type="int" />
+          <Property Name="NEW_VERSION" Type="char" MaxLength="1" />
+          <Property Name="CONFIG_ID" Type="char" MaxLength="32" Nullable="false" />
+          <Property Name="PERMISSION_ID" Type="char" MaxLength="32" Nullable="false" />
+          <Property Name="TEAM_ID" Type="char" MaxLength="32" />
+          <Property Name="FNUMBER" Type="nvarchar" MaxLength="120" Nullable="false" />
+          <Property Name="FSHORTNUMBER" Type="nvarchar" MaxLength="120" />
+          <Property Name="FNAME" Type="nvarchar" MaxLength="200" Nullable="false" />
+          <Property Name="FSHORTNAME" Type="nvarchar" MaxLength="200" />
+          <Property Name="FMODEL" Type="nvarchar" MaxLength="200" />
+          <Property Name="FPARENTID" Type="char" MaxLength="32" />
+          <Property Name="FDETAILID" Type="char" MaxLength="1" />
+          <Property Name="FSECCOEFFICIENT" Type="decimal" Precision="18" Scale="10" />
+          <Property Name="FDEFAULTSTOCKID" Type="char" MaxLength="32" />
+          <Property Name="FSECINV" Type="decimal" Precision="18" Scale="10" />
+          <Property Name="FDELETED" Type="char" MaxLength="1" />
+          <Property Name="FISKFPERIOD" Type="char" MaxLength="1" />
+          <Property Name="FKFPERIOD" Type="decimal" Precision="18" Scale="10" />
+          <Property Name="FTRACK" Type="nvarchar" MaxLength="64" />
+          <Property Name="FPOHIGHPRICE" Type="decimal" Precision="18" Scale="10" />
+          <Property Name="FSOLOWPRC" Type="decimal" Precision="18" Scale="10" />
+          <Property Name="FQTYDECIMAL" Type="int" />
+          <Property Name="FISSALE" Type="char" MaxLength="1" />
+          <Property Name="FISEQUIPMENT" Type="char" MaxLength="1" />
+          <Property Name="FEQUIPMENTNUM" Type="nvarchar" MaxLength="80" />
+          <Property Name="FORDERPRICE" Type="decimal" Precision="18" Scale="10" />
+          <Property Name="FSALEPRICE" Type="decimal" Precision="18" Scale="10" />
+          <Property Name="ISIMPORTFLAG" Type="char" MaxLength="1" />
+          <Property Name="FEXEMPTION" Type="char" MaxLength="1" />
+          <Property Name="FLEADTIME" Type="decimal" Precision="18" Scale="10" />
+          <Property Name="FFIXLEADTIME" Type="decimal" Precision="18" Scale="10" />
+          <Property Name="FDEFAULTOUTSTOCKID" Type="char" MaxLength="32" />
+          <Property Name="FWASTESTOCKID" Type="char" MaxLength="32" />
+          <Property Name="FDEPT" Type="char" MaxLength="32" />
+          <Property Name="STEELTYPE_MAX" Type="decimal" Precision="18" Scale="10" />
+          <Property Name="FINHIGHLIMIT" Type="decimal" Precision="28" Scale="10" />
+          <Property Name="FLOWBATCHQTY" Type="decimal" Precision="18" Scale="10" />
+          <Property Name="FFEEDLENGTH" Type="decimal" Precision="18" Scale="10" />
+          <Property Name="FISSERIALNO" Type="char" MaxLength="1" />
+          <Property Name="FISBATCHNO" Type="char" MaxLength="1" />
+          <Property Name="FGROSSWEIGHT" Type="decimal" Precision="18" Scale="4" />
+          <Property Name="FNETWEIGHT" Type="decimal" Precision="18" Scale="4" />
+          <Property Name="FOUTERID" Type="nvarchar" MaxLength="32" />
+          <Property Name="FOUTERNUMBER" Type="nvarchar" MaxLength="50" />
+          <Property Name="FOUTERNAME" Type="nvarchar" MaxLength="80" />
+          <Property Name="FPROPERTY" Type="nvarchar" MaxLength="64" />
+          <Property Name="FUNITID" Type="char" MaxLength="32" />
+          <Property Name="FSECUNITID" Type="char" MaxLength="32" />
+          <Property Name="FDEFAULTROUTINGID" Type="char" MaxLength="32" />
+          <Property Name="FMATQUALITY" Type="char" MaxLength="32" />
+          <Property Name="FDRAWNNO" Type="nvarchar" MaxLength="255" />
+          <Property Name="FHIGTHLIMIT" Type="decimal" Precision="18" Scale="10" />
+          <Property Name="FLOWLIMIT" Type="decimal" Precision="18" Scale="10" />
+          <Property Name="FMAKEDEPT" Type="char" MaxLength="32" />
+          <Property Name="FRPAIRDATE" Type="int" />
+          <Property Name="FREPAIRDEPT" Type="char" MaxLength="32" />
+          <Property Name="FSUPPLIER" Type="char" MaxLength="32" />
+          <Property Name="FMODIFYTIME" Type="datetime" />
+          <Property Name="FSALEACCID" Type="char" MaxLength="32" />
+          <Property Name="FSELPRICE" Type="decimal" Precision="18" Scale="10" />
+          <Property Name="FITEMINFO" Type="nvarchar(max)" />
+          <Property Name="FCHARTNUMBER" Type="nvarchar" MaxLength="128" />
+          <Property Name="FGROUPID" Type="char" MaxLength="32" />
+          <Property Name="FTAXRATE" Type="decimal" Precision="18" Scale="10" />
+          <Property Name="FISSELLID" Type="char" MaxLength="1" />
+          <Property Name="FISBATCHNOMANGER" Type="char" MaxLength="1" />
+          <Property Name="FTEXT" Type="nvarchar" MaxLength="32" />
+          <Property Name="FIMPORTSQE" Type="nvarchar" MaxLength="32" />
+          <Property Name="FACCID" Type="nvarchar" MaxLength="32" />
+          <Property Name="FCOSTACCID" Type="nvarchar" MaxLength="32" />
+          <Property Name="FCOSTDIFFRATE" Type="nvarchar" MaxLength="32" />
+          <Property Name="FCGDATE" Type="int" />
+          <Property Name="FWINPRICE" Type="decimal" Precision="18" Scale="10" />
+          <Property Name="FPACKMODEL" Type="nvarchar" MaxLength="32" />
+          <Property Name="FBZQ" Type="nvarchar" MaxLength="32" />
+          <Property Name="FSTARTDATE" Type="datetime" />
+          <Property Name="FNOTE" Type="nvarchar(max)" />
+          <Property Name="FTRIALPRODUCE" Type="char" MaxLength="1" />
+          <Property Name="FSOURCE" Type="nvarchar" MaxLength="256" />
+          <Property Name="FSPACE" Type="nvarchar" MaxLength="256" />
+        </EntityType>
+        <EntityContainer Name="JoinSoft_JYBZModelStoreContainer">
+          <EntitySet Name="GY_EMP" EntityType="Self.GY_EMP" Schema="innovator" store:Type="Tables" />
+          <EntitySet Name="GY_ITEM" EntityType="Self.GY_ITEM" Schema="innovator" store:Type="Tables" />
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="JoinSoft_JYBZModel" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+        <EntityType Name="GY_EMP">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="String" MaxLength="32" FixedLength="true" Unicode="false" Nullable="false" />
+          <Property Name="CLASSIFICATION" Type="String" MaxLength="512" FixedLength="false" Unicode="true" />
+          <Property Name="KEYED_NAME" Type="String" MaxLength="128" FixedLength="false" Unicode="true" />
+          <Property Name="CREATED_ON" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="CREATED_BY_ID" Type="String" MaxLength="32" FixedLength="true" Unicode="false" Nullable="false" />
+          <Property Name="OWNED_BY_ID" Type="String" MaxLength="32" FixedLength="true" Unicode="false" />
+          <Property Name="MANAGED_BY_ID" Type="String" MaxLength="32" FixedLength="true" Unicode="false" />
+          <Property Name="MODIFIED_ON" Type="DateTime" Precision="3" />
+          <Property Name="MODIFIED_BY_ID" Type="String" MaxLength="32" FixedLength="true" Unicode="false" />
+          <Property Name="CURRENT_STATE" Type="String" MaxLength="32" FixedLength="true" Unicode="false" />
+          <Property Name="STATE" Type="String" MaxLength="32" FixedLength="false" Unicode="true" />
+          <Property Name="LOCKED_BY_ID" Type="String" MaxLength="32" FixedLength="true" Unicode="false" />
+          <Property Name="IS_CURRENT" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+          <Property Name="MAJOR_REV" Type="String" MaxLength="8" FixedLength="false" Unicode="true" />
+          <Property Name="MINOR_REV" Type="String" MaxLength="8" FixedLength="false" Unicode="true" />
+          <Property Name="IS_RELEASED" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+          <Property Name="NOT_LOCKABLE" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+          <Property Name="CSS" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="GENERATION" Type="Int32" />
+          <Property Name="NEW_VERSION" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+          <Property Name="CONFIG_ID" Type="String" MaxLength="32" FixedLength="true" Unicode="false" Nullable="false" />
+          <Property Name="PERMISSION_ID" Type="String" MaxLength="32" FixedLength="true" Unicode="false" Nullable="false" />
+          <Property Name="TEAM_ID" Type="String" MaxLength="32" FixedLength="true" Unicode="false" />
+          <Property Name="FNUMBER" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="FSHORTNUMBER" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+          <Property Name="FNAME" Type="String" MaxLength="80" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="FDETAILID" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+          <Property Name="FGENDER" Type="String" MaxLength="64" FixedLength="false" Unicode="true" />
+          <Property Name="FDEPTID" Type="String" MaxLength="32" FixedLength="true" Unicode="false" />
+          <Property Name="FADDRESS" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="FHIREDATE" Type="DateTime" Precision="3" />
+          <Property Name="FLEAVEDATE" Type="DateTime" Precision="3" />
+          <Property Name="FBANKACCOUNT" Type="String" MaxLength="80" FixedLength="false" Unicode="true" />
+          <Property Name="FPHONE" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
+          <Property Name="FIDCARDID" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
+          <Property Name="FBIRTHDAY" Type="DateTime" Precision="3" />
+          <Property Name="FBIRTHPLACE" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="FDEGREE" Type="String" MaxLength="64" FixedLength="false" Unicode="true" />
+          <Property Name="FDUTY" Type="String" MaxLength="64" FixedLength="false" Unicode="true" />
+          <Property Name="FDELETED" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+          <Property Name="ISIMPORTFLAG" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+          <Property Name="FNOTE" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="FOUTERID" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="FOUTERNUMBER" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="FOUTERNAME" Type="String" MaxLength="80" FixedLength="false" Unicode="true" />
+          <Property Name="FWCID" Type="String" MaxLength="32" FixedLength="true" Unicode="false" />
+          <Property Name="FPARENTID" Type="String" MaxLength="32" FixedLength="true" Unicode="false" />
+          <Property Name="FPROFESSIONAL" Type="String" MaxLength="32" FixedLength="true" Unicode="false" />
+          <Property Name="FMANAGER" Type="String" MaxLength="32" FixedLength="true" Unicode="false" />
+          <Property Name="FORDER" Type="Int32" />
+          <Property Name="FHOMEPHONE" Type="String" MaxLength="32" FixedLength="false" Unicode="true" />
+          <Property Name="FFAX" Type="String" MaxLength="32" FixedLength="false" Unicode="true" />
+          <Property Name="FOFFICEPHONE" Type="String" MaxLength="32" FixedLength="false" Unicode="true" />
+          <Property Name="FEMAIL" Type="String" MaxLength="32" FixedLength="false" Unicode="true" />
+          <Property Name="FERPID" Type="String" MaxLength="32" FixedLength="false" Unicode="true" />
+          <Property Name="FEASID" Type="String" MaxLength="32" FixedLength="true" Unicode="false" />
+        </EntityType>
+        <EntityType Name="GY_ITEM">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="String" MaxLength="32" FixedLength="true" Unicode="false" Nullable="false" />
+          <Property Name="CLASSIFICATION" Type="String" MaxLength="512" FixedLength="false" Unicode="true" />
+          <Property Name="KEYED_NAME" Type="String" MaxLength="128" FixedLength="false" Unicode="true" />
+          <Property Name="CREATED_ON" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="CREATED_BY_ID" Type="String" MaxLength="32" FixedLength="true" Unicode="false" Nullable="false" />
+          <Property Name="OWNED_BY_ID" Type="String" MaxLength="32" FixedLength="true" Unicode="false" />
+          <Property Name="MANAGED_BY_ID" Type="String" MaxLength="32" FixedLength="true" Unicode="false" />
+          <Property Name="MODIFIED_ON" Type="DateTime" Precision="3" />
+          <Property Name="MODIFIED_BY_ID" Type="String" MaxLength="32" FixedLength="true" Unicode="false" />
+          <Property Name="CURRENT_STATE" Type="String" MaxLength="32" FixedLength="true" Unicode="false" />
+          <Property Name="STATE" Type="String" MaxLength="32" FixedLength="false" Unicode="true" />
+          <Property Name="LOCKED_BY_ID" Type="String" MaxLength="32" FixedLength="true" Unicode="false" />
+          <Property Name="IS_CURRENT" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+          <Property Name="MAJOR_REV" Type="String" MaxLength="8" FixedLength="false" Unicode="true" />
+          <Property Name="MINOR_REV" Type="String" MaxLength="8" FixedLength="false" Unicode="true" />
+          <Property Name="IS_RELEASED" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+          <Property Name="NOT_LOCKABLE" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+          <Property Name="CSS" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="GENERATION" Type="Int32" />
+          <Property Name="NEW_VERSION" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+          <Property Name="CONFIG_ID" Type="String" MaxLength="32" FixedLength="true" Unicode="false" Nullable="false" />
+          <Property Name="PERMISSION_ID" Type="String" MaxLength="32" FixedLength="true" Unicode="false" Nullable="false" />
+          <Property Name="TEAM_ID" Type="String" MaxLength="32" FixedLength="true" Unicode="false" />
+          <Property Name="FNUMBER" Type="String" MaxLength="120" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="FSHORTNUMBER" Type="String" MaxLength="120" FixedLength="false" Unicode="true" />
+          <Property Name="FNAME" Type="String" MaxLength="200" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="FSHORTNAME" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+          <Property Name="FMODEL" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+          <Property Name="FPARENTID" Type="String" MaxLength="32" FixedLength="true" Unicode="false" />
+          <Property Name="FDETAILID" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+          <Property Name="FSECCOEFFICIENT" Type="Decimal" Precision="18" Scale="10" />
+          <Property Name="FDEFAULTSTOCKID" Type="String" MaxLength="32" FixedLength="true" Unicode="false" />
+          <Property Name="FSECINV" Type="Decimal" Precision="18" Scale="10" />
+          <Property Name="FDELETED" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+          <Property Name="FISKFPERIOD" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+          <Property Name="FKFPERIOD" Type="Decimal" Precision="18" Scale="10" />
+          <Property Name="FTRACK" Type="String" MaxLength="64" FixedLength="false" Unicode="true" />
+          <Property Name="FPOHIGHPRICE" Type="Decimal" Precision="18" Scale="10" />
+          <Property Name="FSOLOWPRC" Type="Decimal" Precision="18" Scale="10" />
+          <Property Name="FQTYDECIMAL" Type="Int32" />
+          <Property Name="FISSALE" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+          <Property Name="FISEQUIPMENT" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+          <Property Name="FEQUIPMENTNUM" Type="String" MaxLength="80" FixedLength="false" Unicode="true" />
+          <Property Name="FORDERPRICE" Type="Decimal" Precision="18" Scale="10" />
+          <Property Name="FSALEPRICE" Type="Decimal" Precision="18" Scale="10" />
+          <Property Name="ISIMPORTFLAG" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+          <Property Name="FEXEMPTION" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+          <Property Name="FLEADTIME" Type="Decimal" Precision="18" Scale="10" />
+          <Property Name="FFIXLEADTIME" Type="Decimal" Precision="18" Scale="10" />
+          <Property Name="FDEFAULTOUTSTOCKID" Type="String" MaxLength="32" FixedLength="true" Unicode="false" />
+          <Property Name="FWASTESTOCKID" Type="String" MaxLength="32" FixedLength="true" Unicode="false" />
+          <Property Name="FDEPT" Type="String" MaxLength="32" FixedLength="true" Unicode="false" />
+          <Property Name="STEELTYPE_MAX" Type="Decimal" Precision="18" Scale="10" />
+          <Property Name="FINHIGHLIMIT" Type="Decimal" Precision="28" Scale="10" />
+          <Property Name="FLOWBATCHQTY" Type="Decimal" Precision="18" Scale="10" />
+          <Property Name="FFEEDLENGTH" Type="Decimal" Precision="18" Scale="10" />
+          <Property Name="FISSERIALNO" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+          <Property Name="FISBATCHNO" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+          <Property Name="FGROSSWEIGHT" Type="Decimal" Precision="18" Scale="4" />
+          <Property Name="FNETWEIGHT" Type="Decimal" Precision="18" Scale="4" />
+          <Property Name="FOUTERID" Type="String" MaxLength="32" FixedLength="false" Unicode="true" />
+          <Property Name="FOUTERNUMBER" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="FOUTERNAME" Type="String" MaxLength="80" FixedLength="false" Unicode="true" />
+          <Property Name="FPROPERTY" Type="String" MaxLength="64" FixedLength="false" Unicode="true" />
+          <Property Name="FUNITID" Type="String" MaxLength="32" FixedLength="true" Unicode="false" />
+          <Property Name="FSECUNITID" Type="String" MaxLength="32" FixedLength="true" Unicode="false" />
+          <Property Name="FDEFAULTROUTINGID" Type="String" MaxLength="32" FixedLength="true" Unicode="false" />
+          <Property Name="FMATQUALITY" Type="String" MaxLength="32" FixedLength="true" Unicode="false" />
+          <Property Name="FDRAWNNO" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="FHIGTHLIMIT" Type="Decimal" Precision="18" Scale="10" />
+          <Property Name="FLOWLIMIT" Type="Decimal" Precision="18" Scale="10" />
+          <Property Name="FMAKEDEPT" Type="String" MaxLength="32" FixedLength="true" Unicode="false" />
+          <Property Name="FRPAIRDATE" Type="Int32" />
+          <Property Name="FREPAIRDEPT" Type="String" MaxLength="32" FixedLength="true" Unicode="false" />
+          <Property Name="FSUPPLIER" Type="String" MaxLength="32" FixedLength="true" Unicode="false" />
+          <Property Name="FMODIFYTIME" Type="DateTime" Precision="3" />
+          <Property Name="FSALEACCID" Type="String" MaxLength="32" FixedLength="true" Unicode="false" />
+          <Property Name="FSELPRICE" Type="Decimal" Precision="18" Scale="10" />
+          <Property Name="FITEMINFO" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="FCHARTNUMBER" Type="String" MaxLength="128" FixedLength="false" Unicode="true" />
+          <Property Name="FGROUPID" Type="String" MaxLength="32" FixedLength="true" Unicode="false" />
+          <Property Name="FTAXRATE" Type="Decimal" Precision="18" Scale="10" />
+          <Property Name="FISSELLID" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+          <Property Name="FISBATCHNOMANGER" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+          <Property Name="FTEXT" Type="String" MaxLength="32" FixedLength="false" Unicode="true" />
+          <Property Name="FIMPORTSQE" Type="String" MaxLength="32" FixedLength="false" Unicode="true" />
+          <Property Name="FACCID" Type="String" MaxLength="32" FixedLength="false" Unicode="true" />
+          <Property Name="FCOSTACCID" Type="String" MaxLength="32" FixedLength="false" Unicode="true" />
+          <Property Name="FCOSTDIFFRATE" Type="String" MaxLength="32" FixedLength="false" Unicode="true" />
+          <Property Name="FCGDATE" Type="Int32" />
+          <Property Name="FWINPRICE" Type="Decimal" Precision="18" Scale="10" />
+          <Property Name="FPACKMODEL" Type="String" MaxLength="32" FixedLength="false" Unicode="true" />
+          <Property Name="FBZQ" Type="String" MaxLength="32" FixedLength="false" Unicode="true" />
+          <Property Name="FSTARTDATE" Type="DateTime" Precision="3" />
+          <Property Name="FNOTE" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="FTRIALPRODUCE" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+          <Property Name="FSOURCE" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+          <Property Name="FSPACE" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityContainer Name="JoinSoft_JYBZEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="GY_EMP" EntityType="Self.GY_EMP" />
+          <EntitySet Name="GY_ITEM" EntityType="Self.GY_ITEM" />
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="JoinSoft_JYBZModelStoreContainer" CdmEntityContainer="JoinSoft_JYBZEntities">
+          <EntitySetMapping Name="GY_EMP">
+            <EntityTypeMapping TypeName="JoinSoft_JYBZModel.GY_EMP">
+              <MappingFragment StoreEntitySet="GY_EMP">
+                <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="CLASSIFICATION" ColumnName="CLASSIFICATION" />
+                <ScalarProperty Name="KEYED_NAME" ColumnName="KEYED_NAME" />
+                <ScalarProperty Name="CREATED_ON" ColumnName="CREATED_ON" />
+                <ScalarProperty Name="CREATED_BY_ID" ColumnName="CREATED_BY_ID" />
+                <ScalarProperty Name="OWNED_BY_ID" ColumnName="OWNED_BY_ID" />
+                <ScalarProperty Name="MANAGED_BY_ID" ColumnName="MANAGED_BY_ID" />
+                <ScalarProperty Name="MODIFIED_ON" ColumnName="MODIFIED_ON" />
+                <ScalarProperty Name="MODIFIED_BY_ID" ColumnName="MODIFIED_BY_ID" />
+                <ScalarProperty Name="CURRENT_STATE" ColumnName="CURRENT_STATE" />
+                <ScalarProperty Name="STATE" ColumnName="STATE" />
+                <ScalarProperty Name="LOCKED_BY_ID" ColumnName="LOCKED_BY_ID" />
+                <ScalarProperty Name="IS_CURRENT" ColumnName="IS_CURRENT" />
+                <ScalarProperty Name="MAJOR_REV" ColumnName="MAJOR_REV" />
+                <ScalarProperty Name="MINOR_REV" ColumnName="MINOR_REV" />
+                <ScalarProperty Name="IS_RELEASED" ColumnName="IS_RELEASED" />
+                <ScalarProperty Name="NOT_LOCKABLE" ColumnName="NOT_LOCKABLE" />
+                <ScalarProperty Name="CSS" ColumnName="CSS" />
+                <ScalarProperty Name="GENERATION" ColumnName="GENERATION" />
+                <ScalarProperty Name="NEW_VERSION" ColumnName="NEW_VERSION" />
+                <ScalarProperty Name="CONFIG_ID" ColumnName="CONFIG_ID" />
+                <ScalarProperty Name="PERMISSION_ID" ColumnName="PERMISSION_ID" />
+                <ScalarProperty Name="TEAM_ID" ColumnName="TEAM_ID" />
+                <ScalarProperty Name="FNUMBER" ColumnName="FNUMBER" />
+                <ScalarProperty Name="FSHORTNUMBER" ColumnName="FSHORTNUMBER" />
+                <ScalarProperty Name="FNAME" ColumnName="FNAME" />
+                <ScalarProperty Name="FDETAILID" ColumnName="FDETAILID" />
+                <ScalarProperty Name="FGENDER" ColumnName="FGENDER" />
+                <ScalarProperty Name="FDEPTID" ColumnName="FDEPTID" />
+                <ScalarProperty Name="FADDRESS" ColumnName="FADDRESS" />
+                <ScalarProperty Name="FHIREDATE" ColumnName="FHIREDATE" />
+                <ScalarProperty Name="FLEAVEDATE" ColumnName="FLEAVEDATE" />
+                <ScalarProperty Name="FBANKACCOUNT" ColumnName="FBANKACCOUNT" />
+                <ScalarProperty Name="FPHONE" ColumnName="FPHONE" />
+                <ScalarProperty Name="FIDCARDID" ColumnName="FIDCARDID" />
+                <ScalarProperty Name="FBIRTHDAY" ColumnName="FBIRTHDAY" />
+                <ScalarProperty Name="FBIRTHPLACE" ColumnName="FBIRTHPLACE" />
+                <ScalarProperty Name="FDEGREE" ColumnName="FDEGREE" />
+                <ScalarProperty Name="FDUTY" ColumnName="FDUTY" />
+                <ScalarProperty Name="FDELETED" ColumnName="FDELETED" />
+                <ScalarProperty Name="ISIMPORTFLAG" ColumnName="ISIMPORTFLAG" />
+                <ScalarProperty Name="FNOTE" ColumnName="FNOTE" />
+                <ScalarProperty Name="FOUTERID" ColumnName="FOUTERID" />
+                <ScalarProperty Name="FOUTERNUMBER" ColumnName="FOUTERNUMBER" />
+                <ScalarProperty Name="FOUTERNAME" ColumnName="FOUTERNAME" />
+                <ScalarProperty Name="FWCID" ColumnName="FWCID" />
+                <ScalarProperty Name="FPARENTID" ColumnName="FPARENTID" />
+                <ScalarProperty Name="FPROFESSIONAL" ColumnName="FPROFESSIONAL" />
+                <ScalarProperty Name="FMANAGER" ColumnName="FMANAGER" />
+                <ScalarProperty Name="FORDER" ColumnName="FORDER" />
+                <ScalarProperty Name="FHOMEPHONE" ColumnName="FHOMEPHONE" />
+                <ScalarProperty Name="FFAX" ColumnName="FFAX" />
+                <ScalarProperty Name="FOFFICEPHONE" ColumnName="FOFFICEPHONE" />
+                <ScalarProperty Name="FEMAIL" ColumnName="FEMAIL" />
+                <ScalarProperty Name="FERPID" ColumnName="FERPID" />
+                <ScalarProperty Name="FEASID" ColumnName="FEASID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="GY_ITEM">
+            <EntityTypeMapping TypeName="JoinSoft_JYBZModel.GY_ITEM">
+              <MappingFragment StoreEntitySet="GY_ITEM">
+                <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="CLASSIFICATION" ColumnName="CLASSIFICATION" />
+                <ScalarProperty Name="KEYED_NAME" ColumnName="KEYED_NAME" />
+                <ScalarProperty Name="CREATED_ON" ColumnName="CREATED_ON" />
+                <ScalarProperty Name="CREATED_BY_ID" ColumnName="CREATED_BY_ID" />
+                <ScalarProperty Name="OWNED_BY_ID" ColumnName="OWNED_BY_ID" />
+                <ScalarProperty Name="MANAGED_BY_ID" ColumnName="MANAGED_BY_ID" />
+                <ScalarProperty Name="MODIFIED_ON" ColumnName="MODIFIED_ON" />
+                <ScalarProperty Name="MODIFIED_BY_ID" ColumnName="MODIFIED_BY_ID" />
+                <ScalarProperty Name="CURRENT_STATE" ColumnName="CURRENT_STATE" />
+                <ScalarProperty Name="STATE" ColumnName="STATE" />
+                <ScalarProperty Name="LOCKED_BY_ID" ColumnName="LOCKED_BY_ID" />
+                <ScalarProperty Name="IS_CURRENT" ColumnName="IS_CURRENT" />
+                <ScalarProperty Name="MAJOR_REV" ColumnName="MAJOR_REV" />
+                <ScalarProperty Name="MINOR_REV" ColumnName="MINOR_REV" />
+                <ScalarProperty Name="IS_RELEASED" ColumnName="IS_RELEASED" />
+                <ScalarProperty Name="NOT_LOCKABLE" ColumnName="NOT_LOCKABLE" />
+                <ScalarProperty Name="CSS" ColumnName="CSS" />
+                <ScalarProperty Name="GENERATION" ColumnName="GENERATION" />
+                <ScalarProperty Name="NEW_VERSION" ColumnName="NEW_VERSION" />
+                <ScalarProperty Name="CONFIG_ID" ColumnName="CONFIG_ID" />
+                <ScalarProperty Name="PERMISSION_ID" ColumnName="PERMISSION_ID" />
+                <ScalarProperty Name="TEAM_ID" ColumnName="TEAM_ID" />
+                <ScalarProperty Name="FNUMBER" ColumnName="FNUMBER" />
+                <ScalarProperty Name="FSHORTNUMBER" ColumnName="FSHORTNUMBER" />
+                <ScalarProperty Name="FNAME" ColumnName="FNAME" />
+                <ScalarProperty Name="FSHORTNAME" ColumnName="FSHORTNAME" />
+                <ScalarProperty Name="FMODEL" ColumnName="FMODEL" />
+                <ScalarProperty Name="FPARENTID" ColumnName="FPARENTID" />
+                <ScalarProperty Name="FDETAILID" ColumnName="FDETAILID" />
+                <ScalarProperty Name="FSECCOEFFICIENT" ColumnName="FSECCOEFFICIENT" />
+                <ScalarProperty Name="FDEFAULTSTOCKID" ColumnName="FDEFAULTSTOCKID" />
+                <ScalarProperty Name="FSECINV" ColumnName="FSECINV" />
+                <ScalarProperty Name="FDELETED" ColumnName="FDELETED" />
+                <ScalarProperty Name="FISKFPERIOD" ColumnName="FISKFPERIOD" />
+                <ScalarProperty Name="FKFPERIOD" ColumnName="FKFPERIOD" />
+                <ScalarProperty Name="FTRACK" ColumnName="FTRACK" />
+                <ScalarProperty Name="FPOHIGHPRICE" ColumnName="FPOHIGHPRICE" />
+                <ScalarProperty Name="FSOLOWPRC" ColumnName="FSOLOWPRC" />
+                <ScalarProperty Name="FQTYDECIMAL" ColumnName="FQTYDECIMAL" />
+                <ScalarProperty Name="FISSALE" ColumnName="FISSALE" />
+                <ScalarProperty Name="FISEQUIPMENT" ColumnName="FISEQUIPMENT" />
+                <ScalarProperty Name="FEQUIPMENTNUM" ColumnName="FEQUIPMENTNUM" />
+                <ScalarProperty Name="FORDERPRICE" ColumnName="FORDERPRICE" />
+                <ScalarProperty Name="FSALEPRICE" ColumnName="FSALEPRICE" />
+                <ScalarProperty Name="ISIMPORTFLAG" ColumnName="ISIMPORTFLAG" />
+                <ScalarProperty Name="FEXEMPTION" ColumnName="FEXEMPTION" />
+                <ScalarProperty Name="FLEADTIME" ColumnName="FLEADTIME" />
+                <ScalarProperty Name="FFIXLEADTIME" ColumnName="FFIXLEADTIME" />
+                <ScalarProperty Name="FDEFAULTOUTSTOCKID" ColumnName="FDEFAULTOUTSTOCKID" />
+                <ScalarProperty Name="FWASTESTOCKID" ColumnName="FWASTESTOCKID" />
+                <ScalarProperty Name="FDEPT" ColumnName="FDEPT" />
+                <ScalarProperty Name="STEELTYPE_MAX" ColumnName="STEELTYPE_MAX" />
+                <ScalarProperty Name="FINHIGHLIMIT" ColumnName="FINHIGHLIMIT" />
+                <ScalarProperty Name="FLOWBATCHQTY" ColumnName="FLOWBATCHQTY" />
+                <ScalarProperty Name="FFEEDLENGTH" ColumnName="FFEEDLENGTH" />
+                <ScalarProperty Name="FISSERIALNO" ColumnName="FISSERIALNO" />
+                <ScalarProperty Name="FISBATCHNO" ColumnName="FISBATCHNO" />
+                <ScalarProperty Name="FGROSSWEIGHT" ColumnName="FGROSSWEIGHT" />
+                <ScalarProperty Name="FNETWEIGHT" ColumnName="FNETWEIGHT" />
+                <ScalarProperty Name="FOUTERID" ColumnName="FOUTERID" />
+                <ScalarProperty Name="FOUTERNUMBER" ColumnName="FOUTERNUMBER" />
+                <ScalarProperty Name="FOUTERNAME" ColumnName="FOUTERNAME" />
+                <ScalarProperty Name="FPROPERTY" ColumnName="FPROPERTY" />
+                <ScalarProperty Name="FUNITID" ColumnName="FUNITID" />
+                <ScalarProperty Name="FSECUNITID" ColumnName="FSECUNITID" />
+                <ScalarProperty Name="FDEFAULTROUTINGID" ColumnName="FDEFAULTROUTINGID" />
+                <ScalarProperty Name="FMATQUALITY" ColumnName="FMATQUALITY" />
+                <ScalarProperty Name="FDRAWNNO" ColumnName="FDRAWNNO" />
+                <ScalarProperty Name="FHIGTHLIMIT" ColumnName="FHIGTHLIMIT" />
+                <ScalarProperty Name="FLOWLIMIT" ColumnName="FLOWLIMIT" />
+                <ScalarProperty Name="FMAKEDEPT" ColumnName="FMAKEDEPT" />
+                <ScalarProperty Name="FRPAIRDATE" ColumnName="FRPAIRDATE" />
+                <ScalarProperty Name="FREPAIRDEPT" ColumnName="FREPAIRDEPT" />
+                <ScalarProperty Name="FSUPPLIER" ColumnName="FSUPPLIER" />
+                <ScalarProperty Name="FMODIFYTIME" ColumnName="FMODIFYTIME" />
+                <ScalarProperty Name="FSALEACCID" ColumnName="FSALEACCID" />
+                <ScalarProperty Name="FSELPRICE" ColumnName="FSELPRICE" />
+                <ScalarProperty Name="FITEMINFO" ColumnName="FITEMINFO" />
+                <ScalarProperty Name="FCHARTNUMBER" ColumnName="FCHARTNUMBER" />
+                <ScalarProperty Name="FGROUPID" ColumnName="FGROUPID" />
+                <ScalarProperty Name="FTAXRATE" ColumnName="FTAXRATE" />
+                <ScalarProperty Name="FISSELLID" ColumnName="FISSELLID" />
+                <ScalarProperty Name="FISBATCHNOMANGER" ColumnName="FISBATCHNOMANGER" />
+                <ScalarProperty Name="FTEXT" ColumnName="FTEXT" />
+                <ScalarProperty Name="FIMPORTSQE" ColumnName="FIMPORTSQE" />
+                <ScalarProperty Name="FACCID" ColumnName="FACCID" />
+                <ScalarProperty Name="FCOSTACCID" ColumnName="FCOSTACCID" />
+                <ScalarProperty Name="FCOSTDIFFRATE" ColumnName="FCOSTDIFFRATE" />
+                <ScalarProperty Name="FCGDATE" ColumnName="FCGDATE" />
+                <ScalarProperty Name="FWINPRICE" ColumnName="FWINPRICE" />
+                <ScalarProperty Name="FPACKMODEL" ColumnName="FPACKMODEL" />
+                <ScalarProperty Name="FBZQ" ColumnName="FBZQ" />
+                <ScalarProperty Name="FSTARTDATE" ColumnName="FSTARTDATE" />
+                <ScalarProperty Name="FNOTE" ColumnName="FNOTE" />
+                <ScalarProperty Name="FTRIALPRODUCE" ColumnName="FTRIALPRODUCE" />
+                <ScalarProperty Name="FSOURCE" ColumnName="FSOURCE" />
+                <ScalarProperty Name="FSPACE" ColumnName="FSPACE" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2008/10/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="false" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="true" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="无" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>
