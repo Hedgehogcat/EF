@@ -58,13 +58,21 @@ namespace EFReview
             #endregion
 
             #region 第二种延迟加载机制
-
-            var users = from u in dbcontext.UserInfo
+            IQueryable<UserInfo> users = from u in dbcontext.UserInfo
                             where u.Id>=6
                             select u;
 
-            //Iqueryable :是非常特殊接口，数据并不存放在本地，只有用到的时候通过Provider去解析Exprecession加载数据
-            //List \Array\IEnumber\...本地集合
+            //Iqueryable :是非常特殊接口，数据并不存放在本地，只有用到的时候通过Provider去解析Exprecession查询数据库中数据
+            
+            //List \Array\IEnumber\...本地集合，foreach用的时候查询本地内存中的数据
+            var users1 = (from u in dbcontext.UserInfo
+                        where u.Id >= 6
+                        select u).ToList();
+            foreach (var user1 in users1)
+            {
+                Console.WriteLine(user1.Username);
+            }
+
             foreach (var user in users)
             {
                 Console.WriteLine(user.Username+"所有订单个数："+user.Order.Count());

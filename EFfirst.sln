@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ModelFirstDemo", "ModelFirs
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EFReview", "EFReview\EFReview.csproj", "{896AA27A-B0C2-4380-B4AC-F9207E373B58}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WFSetOpacity", "WFSetOpacity\WFSetOpacity.csproj", "{92BD6A6E-2CE0-4F38-B64F-D073BE92FBE5}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{896AA27A-B0C2-4380-B4AC-F9207E373B58}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{896AA27A-B0C2-4380-B4AC-F9207E373B58}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{896AA27A-B0C2-4380-B4AC-F9207E373B58}.Release|Any CPU.Build.0 = Release|Any CPU
+		{92BD6A6E-2CE0-4F38-B64F-D073BE92FBE5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{92BD6A6E-2CE0-4F38-B64F-D073BE92FBE5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{92BD6A6E-2CE0-4F38-B64F-D073BE92FBE5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{92BD6A6E-2CE0-4F38-B64F-D073BE92FBE5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
