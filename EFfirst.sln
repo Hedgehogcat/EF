@@ -13,6 +13,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WFSetOpacity", "WFSetOpacit
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EFCodeOnlyDemo", "EFCodeOnlyDemo\EFCodeOnlyDemo.csproj", "{C59F291E-54F9-4904-B81D-1E5744DF58BB}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "测试Demo", "测试Demo\测试Demo.csproj", "{7DF0CE11-7B4B-400E-B169-B03E0BCD454C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApplication2", "WebApplication2\WebApplication2.csproj", "{401C4702-303E-4E15-BCA7-278DB7790062}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +43,14 @@ Global
 		{C59F291E-54F9-4904-B81D-1E5744DF58BB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C59F291E-54F9-4904-B81D-1E5744DF58BB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C59F291E-54F9-4904-B81D-1E5744DF58BB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7DF0CE11-7B4B-400E-B169-B03E0BCD454C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7DF0CE11-7B4B-400E-B169-B03E0BCD454C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7DF0CE11-7B4B-400E-B169-B03E0BCD454C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7DF0CE11-7B4B-400E-B169-B03E0BCD454C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{401C4702-303E-4E15-BCA7-278DB7790062}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{401C4702-303E-4E15-BCA7-278DB7790062}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{401C4702-303E-4E15-BCA7-278DB7790062}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{401C4702-303E-4E15-BCA7-278DB7790062}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
