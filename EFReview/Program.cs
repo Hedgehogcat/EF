@@ -84,6 +84,17 @@ namespace EFReview
 
             #endregion
 
+            #region EF 分页
+            int pagesize = 4;
+            int pageindex = 3;
+            var data = (from u in dbcontext.UserInfo
+                        where u.Id > 0
+                        orderby u.Id descending//分页必须排序
+                        select u)
+                       .Skip(pagesize * (pageindex - 1))//越过多少条
+                       .Take(pagesize).ToList();//取多少条 
+            #endregion
+
             dbcontext.SaveChanges();
 
         }
