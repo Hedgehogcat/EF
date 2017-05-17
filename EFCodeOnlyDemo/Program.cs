@@ -25,7 +25,7 @@ namespace EFCodeOnlyDemo
             //{ 
 
             //}
-            Product p = new Product();
+         //   Product p = new Product();
 
 
         }
